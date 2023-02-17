@@ -10,3 +10,5 @@
 /vendor
 /main
 /server/router/web
+.goreleaser.yaml
+dist
