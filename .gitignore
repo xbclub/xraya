@@ -33,3 +33,4 @@ node_modules
 /PKGBUILD
 /go.mod
 /go.sum
+.goreleaser.yaml
