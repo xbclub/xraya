@@ -41,7 +41,7 @@ func checkEnvironment() {
 				"If you are sure you are root user, use the --passcheckroot parameter to skip the check.\n" +
 				"If you don't want to run as root or you are a non-linux user, use --lite please.\n" +
 				"For example:\n" +
-				"$ v2raya --lite",
+				"$ xraya --lite",
 			)
 		}
 	}
