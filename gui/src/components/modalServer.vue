@@ -12,7 +12,7 @@
         class="block"
         type="is-boxed is-twitter same-width-5"
       >
-        <b-tab-item label="V2RAY">
+        <b-tab-item label="XRAY">
           <b-field
             v-show="showVLess"
             label="Protocol"
@@ -95,14 +95,14 @@
             </b-select>
           </b-field>
           <b-field
-            v-show="v2ray.tls === 'xtls'"
+            v-show="v2ray.tls === 'xtls' || v2ray.tls === 'tls'"
             label="Flow"
             label-position="on-border"
           >
             <b-autocomplete
               v-model="v2ray.flow"
               open-on-focus
-              placeholder="xtls-rprx-direct"
+              :placeholder="xtls-rprx-vision"
               :data="filteredDataArray"
               @select="option => (flowSelected = option)"
             >
@@ -790,7 +790,7 @@ export default {
       host: "",
       path: "",
       tls: "none",
-      flow: "xtls-rprx-direct",
+      flow: "xtls-rprx-vision",
       alpn: "",
       v: "",
       allowInsecure: false,

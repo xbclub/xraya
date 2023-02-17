@@ -2,9 +2,9 @@ package report
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common/httpClient"
-	"github.com/v2rayA/v2rayA/core/v2ray"
-	"github.com/v2rayA/v2rayA/db/configure"
+	"github.com/xbclub/xraya/common/httpClient"
+	"github.com/xbclub/xraya/core/v2ray"
+	"github.com/xbclub/xraya/db/configure"
 	"io"
 	"net"
 	"net/http"

@@ -1,8 +1,8 @@
 package iptables
 
 import (
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/common/cmds"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/common/cmds"
 	"strings"
 	"sync"
 	"time"

@@ -1,9 +1,9 @@
 package specialMode
 
 import (
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/v2ray/where"
-	"github.com/v2rayA/v2rayA/db/configure"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/v2ray/where"
+	"github.com/xbclub/xraya/db/configure"
 )
 
 func CouldUseFakeDns() bool {

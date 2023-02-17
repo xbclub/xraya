@@ -1,6 +1,6 @@
-# v2rayA [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/v2rayA/v2raya)](https://hub.docker.com/r/mzz2017/v2raya) [![Travis (.org)](https://img.shields.io/travis/v2rayA/v2rayA?label=travis-ci%20build)](https://travis-ci.org/v2rayA/v2rayA)
+# v2rayA [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xbclub/xraya)](https://hub.docker.com/r/mzz2017/v2raya) [![Travis (.org)](https://img.shields.io/travis/xbclub/xraya?label=travis-ci%20build)](https://travis-ci.org/xbclub/xraya)
 
-[**English**](https://github.com/v2rayA/v2rayA/blob/master/README.md)&nbsp;&nbsp;&nbsp;[**简体中文**](https://github.com/v2rayA/v2rayA/blob/master/README_zh.md)
+[**English**](https://github.com/xbclub/xraya/blob/master/README.md)&nbsp;&nbsp;&nbsp;[**简体中文**](https://github.com/xbclub/xraya/blob/master/README_zh.md)
 
 v2rayA is a V2Ray Linux client supporting global transparent proxy, compatible with SS, SSR, Trojan(trojan-go), [PingTunnel](https://github.com/esrrhs/pingtunnel) protocols. [[SSR protocol list]](https://github.com/v2rayA/shadowsocksR/blob/master/README.md#ss-encrypting-algorithm)
 
@@ -8,7 +8,7 @@ We are committed to providing the simplest operation and meet most needs.
 
 Thanks to the advantages of Web GUI, you can not only use it on your local computer, but also easily deploy it on a router or NAS.
 
-Project：https://github.com/v2rayA/v2rayA
+Project：https://github.com/xbclub/xraya
 
 
 ## Usage
@@ -19,7 +19,7 @@ v2rayA mainly provides the following methods of installation:
 2. Docker
 3. Binary file and installation package
 
-See [**v2rayA - Wiki**](https://github.com/v2rayA/v2rayA/wiki/Usage)
+See [**v2rayA - Wiki**](https://github.com/xbclub/xraya/wiki/Usage)
 
 
 ## Screenshot
@@ -45,7 +45,7 @@ See [**v2rayA - Wiki**](https://github.com/v2rayA/v2rayA/wiki/Usage)
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/v2rayA/v2rayA.svg)](https://starchart.cc/v2rayA/v2rayA)
+[![Stargazers over time](https://starchart.cc/xbclub/xraya.svg)](https://starchart.cc/xbclub/xraya)
 
 ## License
 

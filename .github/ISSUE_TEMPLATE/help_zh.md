@@ -25,7 +25,7 @@ labels: help wanted
  ```bash
  # daemon mode
  journalctl -u v2raya | tail -n 50
- sudo tail -n 50 /var/log/v2raya/v2raya.log
+ sudo tail -n 50 /var/log/xbclub/xraya.log
 
  # docker mode
  docker logs v2raya

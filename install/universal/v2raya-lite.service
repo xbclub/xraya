@@ -1,13 +1,13 @@
 [Unit]
 Description=v2rayA Lite Service
-Documentation=https://github.com/v2rayA/v2rayA/wiki
+Documentation=https://github.com/xbclub/xraya/wiki
 After=network.target nss-lookup.target iptables.service ip6tables.service
 Wants=network.target
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/v2raya --lite --log-disable-timestamp
-Environment=V2RAYA_LOG_FILE=%L/v2raya/v2raya.log
+Environment=V2RAYA_LOG_FILE=%L/xbclub/xraya.log
 Restart=on-failure
 
 [Install]

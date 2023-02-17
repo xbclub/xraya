@@ -1,9 +1,9 @@
 package configure
 
 import (
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/ipforward"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/ipforward"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 type Setting struct {
@@ -55,7 +55,7 @@ type CustomPac struct {
 	RoutingRules     []RoutingRule           `json:"routingRules"`
 }
 
-//v2rayTmpl.RoutingRule的前端友好版本
+// v2rayTmpl.RoutingRule的前端友好版本
 type RoutingRule struct {
 	Filename  string       `json:"filename"`  //SiteDAT文件名
 	Tags      []string     `json:"tags"`      //SiteDAT文件的标签

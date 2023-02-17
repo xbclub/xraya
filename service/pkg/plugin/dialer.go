@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 // Dialer is used to create connection.

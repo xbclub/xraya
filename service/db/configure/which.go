@@ -2,8 +2,8 @@ package configure
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common/resolv"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/common/resolv"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"net"
 	"sort"
 	"strconv"

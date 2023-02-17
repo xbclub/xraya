@@ -91,7 +91,7 @@ jobs:
           if [ "$GOOS" == "windows" ]; then
             SUFFIX=".exe"
           fi
-          CGO_ENABLED=0 go build -ldflags="-X github.com/v2rayA/v2rayA/conf.Version=$VERSION -s -w" -o ../v2raya_"$GOOS"_"$GOARCH"_"$VERSION""$SUFFIX"
+          CGO_ENABLED=0 go build -ldflags="-X github.com/xbclub/xraya/conf.Version=$VERSION -s -w" -o ../v2raya_"$GOOS"_"$GOARCH"_"$VERSION""$SUFFIX"
         done
     - name: Rename Binaries to Friendly Filenames
       run: |
@@ -124,7 +124,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
       run: |
         export FILES="install/universal/v2raya.service=/etc/systemd/system/v2raya.service install/universal/v2raya-lite.service=/usr/lib/systemd/user/v2raya-lite.service install/universal/v2raya.png=/usr/share/icons/hicolor/512x512/apps/v2raya.png install/universal/v2raya.desktop=/usr/share/applications/v2raya.desktop"
-        export PARAMS="--maintainer v2rayA --after-install install/universal/after_install.sh --after-upgrade install/universal/after_upgrade.sh --verbose -f -n $NAME -v $VERSION --url https://github.com/v2rayA/v2raya"
+        export PARAMS="--maintainer v2rayA --after-install install/universal/after_install.sh --after-upgrade install/universal/after_upgrade.sh --verbose -f -n $NAME -v $VERSION --url https://github.com/xbclub/xraya"
         tar -zcvf web.tar.gz web/
 
         # https://www.debian.org/releases/stretch/
@@ -166,17 +166,17 @@ jobs:
       run: |
         mkdir -p /tmp/NSIS/v2rayA && cd /tmp/NSIS
         cp $GITHUB_WORKSPACE/LICENSE $PWD/License.txt
-        cp $GITHUB_WORKSPACE/gui/public/img/icons/windows-icon-255x255.ico v2rayA/v2raya.ico
-        cp $GITHUB_WORKSPACE/gui/public/img/icons/windows-bitmap-150x57.bmp v2rayA/v2raya.bmp
+        cp $GITHUB_WORKSPACE/gui/public/img/icons/windows-icon-255x255.ico xbclub/xraya.ico
+        cp $GITHUB_WORKSPACE/gui/public/img/icons/windows-bitmap-150x57.bmp xbclub/xraya.bmp
         cp $GITHUB_WORKSPACE/install/windows/v2raya.xml v2rayA/
         cp $GITHUB_WORKSPACE/install/windows/v2raya.nsi $PWD
         cp $P_DIR/v2raya_windows_x64_${{ steps.prep.outputs.VERSION }}.exe v2rayA/
         wget https://github.com/v2fly/v2ray-core/releases/download/v4.44.0/v2ray-windows-64.zip
         unzip -d v2ray-core v2ray-windows-64.zip
         mv v2ray-core/*.dat v2rayA/
-        wget https://github.com/winsw/winsw/releases/download/v2.11.0/WinSW-x64.exe -O v2rayA/v2raya.exe
-        sed -i "s/@ARCH@/${ARCH}/g"       v2raya.nsi v2rayA/v2raya.xml
-        sed -i "s/@VERSION@/${VERSION}/g" v2raya.nsi v2rayA/v2raya.xml
+        wget https://github.com/winsw/winsw/releases/download/v2.11.0/WinSW-x64.exe -O xbclub/xraya.exe
+        sed -i "s/@ARCH@/${ARCH}/g"       v2raya.nsi xbclub/xraya.xml
+        sed -i "s/@VERSION@/${VERSION}/g" v2raya.nsi xbclub/xraya.xml
         makensis v2raya.nsi
         mv installer_windows_x64_${{ steps.prep.outputs.VERSION }}.exe $P_DIR
         cd $P_DIR
@@ -205,7 +205,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
       uses: crazy-max/ghaction-github-pages@v2.5.0
       with:
-        repo: v2rayA/v2raya-apt
+        repo: xbclub/xraya-apt
         target_branch: master
         build_dir: apt
       env:
@@ -214,7 +214,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v')
       uses: crazy-max/ghaction-github-pages@v2.5.0
       with:
-        repo: v2rayA/v2raya-web
+        repo: xbclub/xraya-web
         target_branch: master
         build_dir: web
       env:

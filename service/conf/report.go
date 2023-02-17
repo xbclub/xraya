@@ -2,7 +2,7 @@ package conf
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common"
+	"github.com/xbclub/xraya/common"
 	log2 "log"
 	"runtime"
 	"strings"

@@ -2,9 +2,9 @@ package service
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/v2ray"
-	"github.com/v2rayA/v2rayA/core/v2ray/service"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/v2ray"
+	"github.com/xbclub/xraya/core/v2ray/service"
 	"net"
 	"net/url"
 	"strconv"

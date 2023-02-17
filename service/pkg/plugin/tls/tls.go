@@ -3,7 +3,7 @@ package tls
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/v2rayA/v2rayA/pkg/plugin"
+	"github.com/xbclub/xraya/pkg/plugin"
 	"net"
 	"net/url"
 	"strings"

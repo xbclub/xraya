@@ -2,9 +2,9 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/server/service"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/server/service"
 )
 
 func PostImport(ctx *gin.Context) {

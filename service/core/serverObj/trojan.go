@@ -2,9 +2,9 @@ package serverObj
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/coreObj"
-	"github.com/v2rayA/v2rayA/core/v2ray/where"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/coreObj"
+	"github.com/xbclub/xraya/core/v2ray/where"
 	"net"
 	"net/url"
 	"strconv"

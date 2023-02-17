@@ -2,7 +2,7 @@ package iptables
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common/cmds"
+	"github.com/xbclub/xraya/common/cmds"
 	"strings"
 )
 
@@ -84,7 +84,7 @@ ip6tables -w 2 -t nat -A TP_OUT -j TP_RULE
 `
 	}
 	return Setter{
-		Cmds:      commands,
+		Cmds: commands,
 	}
 }
 
@@ -112,6 +112,6 @@ ip6tables -w 2 -t nat -X TP_RULE
 `
 	}
 	return Setter{
-		Cmds:      commands,
+		Cmds: commands,
 	}
 }

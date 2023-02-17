@@ -2,11 +2,11 @@ package v2ray
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/conf"
-	"github.com/v2rayA/v2rayA/core/iptables"
-	"github.com/v2rayA/v2rayA/core/specialMode"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/conf"
+	"github.com/xbclub/xraya/core/iptables"
+	"github.com/xbclub/xraya/core/specialMode"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"strings"
 	"time"
 )

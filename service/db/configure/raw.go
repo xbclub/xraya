@@ -3,9 +3,9 @@ package configure
 import (
 	jsoniter "github.com/json-iterator/go"
 	"github.com/tidwall/gjson"
-	"github.com/v2rayA/v2rayA/core/serverObj"
-	"github.com/v2rayA/v2rayA/core/vmessInfo"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/core/serverObj"
+	"github.com/xbclub/xraya/core/vmessInfo"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 type ServerRawV2 struct {

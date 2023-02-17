@@ -88,7 +88,7 @@ else {
             }
             $corePath = $SHELL_FOLDER + "/service"
             Set-Location -path "$corePath"
-            go build -ldflags "-X github.com/v2rayA/v2rayA/conf.Version=$version -s -w" -o "$SHELL_FOLDER/$v2rayaBin"
+            go build -ldflags "-X github.com/xbclub/xraya/conf.Version=$version -s -w" -o "$SHELL_FOLDER/$v2rayaBin"
         }
     }
 }

@@ -2,8 +2,8 @@ package dat
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/core/v2ray/asset"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/core/v2ray/asset"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"os"
 	"strings"
 )

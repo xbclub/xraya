@@ -7,7 +7,7 @@ import (
 	"github.com/google/gopacket/pcapgo"
 	"github.com/v2fly/v2ray-core/v4/common/strmatcher"
 	v2router "github.com/v2rayA/v2ray-lib/router"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"sync"
 	"time"
 )

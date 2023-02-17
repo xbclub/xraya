@@ -2,10 +2,10 @@ package httpClient
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/v2ray"
-	"github.com/v2rayA/v2rayA/db/configure"
-	proxyWithHttp2 "github.com/v2rayA/v2rayA/pkg/util/proxyWithHttp"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/v2ray"
+	"github.com/xbclub/xraya/db/configure"
+	proxyWithHttp2 "github.com/xbclub/xraya/pkg/util/proxyWithHttp"
 	"net"
 	"net/http"
 	"net/url"

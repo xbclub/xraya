@@ -2,8 +2,8 @@ package iptables
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common/cmds"
-	"github.com/v2rayA/v2rayA/db/configure"
+	"github.com/xbclub/xraya/common/cmds"
+	"github.com/xbclub/xraya/db/configure"
 	"strings"
 )
 
@@ -150,7 +150,7 @@ ip6tables -w 2 -t mangle -A TP_MARK -j CONNMARK --save-mark
 `
 	}
 	return Setter{
-		Cmds:      commands,
+		Cmds: commands,
 	}
 }
 
@@ -188,6 +188,6 @@ ip6tables -w 2 -t mangle -X TP_MARK
 `
 	}
 	return Setter{
-		Cmds:      commands,
+		Cmds: commands,
 	}
 }

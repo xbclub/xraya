@@ -2,12 +2,12 @@ package specialMode
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2ray-lib/router/routercommon"
 	"github.com/v2rayA/v2ray-lib/router"
-	"github.com/v2rayA/v2rayA/conf"
-	"github.com/v2rayA/v2rayA/core/specialMode/infra"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/v2rayA/v2ray-lib/router/routercommon"
+	"github.com/xbclub/xraya/conf"
+	"github.com/xbclub/xraya/core/specialMode/infra"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"net"
 	"sync"
 	"time"

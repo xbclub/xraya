@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/v2rayA/v2rayA/core/coreObj"
+	"github.com/xbclub/xraya/core/coreObj"
 )
 
 func init() {

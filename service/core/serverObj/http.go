@@ -1,7 +1,7 @@
 package serverObj
 
 import (
-	"github.com/v2rayA/v2rayA/core/coreObj"
+	"github.com/xbclub/xraya/core/coreObj"
 	"net"
 	"net/url"
 	"strconv"

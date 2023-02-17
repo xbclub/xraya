@@ -6,12 +6,12 @@ pkgrel=1
 install=.INSTALL
 pkgdesc="A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan and Pingtunnel protocols"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv7h' 'armv6h' 'aarch64')
-url="https://github.com/v2rayA/v2rayA"
+url="https://github.com/xbclub/xraya"
 license=('AGPL3')
 depends=('glibc')
 optdepends=('v2ray>=4.37.0-1' 'xray>=1.4.2-1')
 makedepends=('go>=2:1.17.0-1' 'nodejs>=14' 'yarn' 'python2')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/v2rayA/v2rayA/archive/v$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/xbclub/xraya/archive/v$pkgver.tar.gz")
 sha512sums=('SKIP')
 
 build() {
@@ -22,7 +22,7 @@ build() {
     cd "$srcdir/v2rayA-$pkgver/service"
     export GO111MODULE=on
     export GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
-    go build -ldflags '-X github.com/v2rayA/v2rayA/conf.Version='$pkgver' -s -w' -o v2raya
+    go build -ldflags '-X github.com/xbclub/xraya/conf.Version='$pkgver' -s -w' -o v2raya
 }
 
 package() {

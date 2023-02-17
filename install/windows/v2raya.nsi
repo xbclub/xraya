@@ -139,7 +139,7 @@ Section "Install Section" SecInst
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "UninstallString" "$\"$INSTDIR\Uninstall.exe$\""
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "DisplayIcon" "$\"$INSTDIR\v2raya.ico$\""
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "Publisher" "The v2rayA developer community"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "URLInfoAbout" "https://github.com/v2rayA/v2rayA"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "URLInfoAbout" "https://github.com/xbclub/xraya"
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "NoRepair" 1
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "DisplayVersion" "@VERSION@"

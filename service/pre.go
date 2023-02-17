@@ -5,19 +5,19 @@ import (
 	"github.com/gin-gonic/gin"
 	jsoniter "github.com/json-iterator/go"
 	jsonIteratorExtra "github.com/json-iterator/go/extra"
-	"github.com/v2rayA/v2rayA/common/netTools/ports"
-	"github.com/v2rayA/v2rayA/conf"
-	"github.com/v2rayA/v2rayA/core/serverObj"
-	"github.com/v2rayA/v2rayA/core/v2ray"
-	"github.com/v2rayA/v2rayA/core/v2ray/asset"
-	"github.com/v2rayA/v2rayA/core/v2ray/asset/dat"
-	service2 "github.com/v2rayA/v2rayA/core/v2ray/service"
-	"github.com/v2rayA/v2rayA/core/v2ray/where"
-	"github.com/v2rayA/v2rayA/db"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
-	"github.com/v2rayA/v2rayA/server/router"
-	"github.com/v2rayA/v2rayA/server/service"
+	"github.com/xbclub/xraya/common/netTools/ports"
+	"github.com/xbclub/xraya/conf"
+	"github.com/xbclub/xraya/core/serverObj"
+	"github.com/xbclub/xraya/core/v2ray"
+	"github.com/xbclub/xraya/core/v2ray/asset"
+	"github.com/xbclub/xraya/core/v2ray/asset/dat"
+	service2 "github.com/xbclub/xraya/core/v2ray/service"
+	"github.com/xbclub/xraya/core/v2ray/where"
+	"github.com/xbclub/xraya/db"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/pkg/util/log"
+	"github.com/xbclub/xraya/server/router"
+	"github.com/xbclub/xraya/server/service"
 	"net"
 	"os"
 	"os/signal"
@@ -178,7 +178,7 @@ func initConfigure() {
 	//db
 	if configure.IsConfigureNotExists() {
 		// need to migrate?
-		camp := []string{path.Join(conf.GetEnvironmentConfig().Config, "v2raya.json"), "/etc/v2ray/v2raya.json", "/etc/v2raya/v2raya.json"}
+		camp := []string{path.Join(conf.GetEnvironmentConfig().Config, "v2raya.json"), "/etc/v2ray/v2raya.json", "/etc/xbclub/xraya.json"}
 		var success bool
 		for _, jsonConfPath := range camp {
 			if _, err := os.Stat(jsonConfPath); err == nil {

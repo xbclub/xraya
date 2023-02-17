@@ -2,17 +2,17 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	_ "github.com/v2rayA/v2rayA/conf/report"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/pingtunnel"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/simpleobfs"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/socks5"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/ss"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/ssr"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/tcp"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/tls"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/trojanc"
-	_ "github.com/v2rayA/v2rayA/pkg/plugin/ws"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	_ "github.com/xbclub/xraya/conf/report"
+	_ "github.com/xbclub/xraya/pkg/plugin/pingtunnel"
+	_ "github.com/xbclub/xraya/pkg/plugin/simpleobfs"
+	_ "github.com/xbclub/xraya/pkg/plugin/socks5"
+	_ "github.com/xbclub/xraya/pkg/plugin/ss"
+	_ "github.com/xbclub/xraya/pkg/plugin/ssr"
+	_ "github.com/xbclub/xraya/pkg/plugin/tcp"
+	_ "github.com/xbclub/xraya/pkg/plugin/tls"
+	_ "github.com/xbclub/xraya/pkg/plugin/trojanc"
+	_ "github.com/xbclub/xraya/pkg/plugin/ws"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"runtime"
 )
 

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/tidwall/gjson"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/db"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/db"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"sort"
 	"strings"
 )
@@ -189,7 +189,7 @@ func GetServers() []ServerRaw {
 	return r
 }
 
-//Deprecated
+// Deprecated
 func GetSubscriptions() []SubscriptionRaw {
 	r := make([]SubscriptionRaw, 0)
 	raw, err := db.ListGetAll("touch", "subscriptions")

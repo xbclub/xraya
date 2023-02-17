@@ -5,7 +5,7 @@ package plugin
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"golang.org/x/sys/unix"
 	"net"
 	"runtime"
@@ -52,7 +52,6 @@ func BindControl(c syscall.RawConn, laddr string, lport uint32) error {
 		}
 	})
 }
-
 
 func bindAddr(fd uintptr, ip []byte, port uint32) error {
 	if err := syscall.SetsockoptInt(int(fd), syscall.SOL_SOCKET, syscall.SO_REUSEADDR, 1); err != nil {

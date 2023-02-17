@@ -81,7 +81,7 @@ export default {
       }
     },
     handleClickManual() {
-      window.open("https://github.com/v2rayA/v2rayA/wiki/RoutingA", "_blank");
+      window.open("https://github.com/xbclub/xraya/wiki/RoutingA", "_blank");
     },
     handleClickSubmit() {
       this.$axios({

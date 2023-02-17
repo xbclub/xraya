@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"encoding/gob"
 	"github.com/boltdb/bolt"
-	"github.com/v2rayA/v2rayA/common"
+	"github.com/xbclub/xraya/common"
 )
 
 type set map[[32]byte]interface{}

@@ -5,7 +5,7 @@ import (
 	"github.com/dgrijalva/jwt-go/v4/request"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
-	"github.com/v2rayA/v2rayA/common"
+	"github.com/xbclub/xraya/common"
 	"strings"
 	"time"
 )

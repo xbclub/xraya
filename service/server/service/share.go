@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/db/configure"
+	"github.com/xbclub/xraya/db/configure"
 )
 
 func GetSharingAddress(w *configure.Which) (addr string, err error) {
@@ -22,6 +22,7 @@ func GetSharingAddress(w *configure.Which) (addr string, err error) {
 		if err != nil {
 			return
 		}
+		fmt.Println(tsr.Latency)
 		addr = tsr.ServerObj.ExportToURL()
 		if addr == "" {
 			return "", fmt.Errorf("an error occurred while generating the address")

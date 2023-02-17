@@ -2,9 +2,9 @@ package service
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/pkg/server/jwt"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/pkg/server/jwt"
 	"time"
 )
 

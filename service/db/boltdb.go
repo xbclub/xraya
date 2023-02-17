@@ -1,10 +1,11 @@
 package db
 
 import (
+	"fmt"
 	"github.com/boltdb/bolt"
-	"github.com/v2rayA/v2rayA/conf"
-	"github.com/v2rayA/v2rayA/pkg/util/copyfile"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/conf"
+	"github.com/xbclub/xraya/pkg/util/copyfile"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"os"
 	"path/filepath"
 	"sync"
@@ -20,6 +21,7 @@ func SetReadOnly() {
 
 func initDB() {
 	confPath := conf.GetEnvironmentConfig().Config
+	fmt.Println(confPath)
 	dbPath := filepath.Join(confPath, "boltv4.db")
 	if readOnly {
 		// trick: not really read-only

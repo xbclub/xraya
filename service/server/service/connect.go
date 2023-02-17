@@ -2,12 +2,12 @@ package service
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/core/ipforward"
-	"github.com/v2rayA/v2rayA/core/v2ray"
-	"github.com/v2rayA/v2rayA/core/v2ray/asset"
-	"github.com/v2rayA/v2rayA/core/v2ray/service"
-	"github.com/v2rayA/v2rayA/db/configure"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/core/ipforward"
+	"github.com/xbclub/xraya/core/v2ray"
+	"github.com/xbclub/xraya/core/v2ray/asset"
+	"github.com/xbclub/xraya/core/v2ray/service"
+	"github.com/xbclub/xraya/db/configure"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 func StopV2ray() (err error) {

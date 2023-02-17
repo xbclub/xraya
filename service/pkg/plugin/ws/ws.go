@@ -3,7 +3,7 @@ package ws
 import (
 	"fmt"
 	"github.com/gorilla/websocket"
-	"github.com/v2rayA/v2rayA/pkg/plugin"
+	"github.com/xbclub/xraya/pkg/plugin"
 	"net"
 	"net/http"
 	"net/url"

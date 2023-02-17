@@ -2,7 +2,7 @@ package common
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/v2rayA/v2rayA/infra/dataStructure/lru"
+	"github.com/xbclub/xraya/infra/dataStructure/lru"
 	"net/http"
 )
 
@@ -22,7 +22,7 @@ const (
 	RequestIdHeader = "X-V2raya-Request-Id"
 )
 
-//当code为FAIL时，data为string类型返回给前端的消息
+// 当code为FAIL时，data为string类型返回给前端的消息
 func Response(ctx *gin.Context, code Code, data interface{}) (status int, body gin.H) {
 	if reqId := ctx.GetHeader(RequestIdHeader); reqId != "" {
 		if resp := RespCache.Get(reqId); resp != nil {

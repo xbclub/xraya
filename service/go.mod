@@ -1,4 +1,4 @@
-module github.com/v2rayA/v2rayA
+module github.com/xbclub/xraya
 
 go 1.17
 

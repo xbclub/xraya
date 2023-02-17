@@ -281,7 +281,7 @@ export default {
           <p class="about-small">32345: tproxy, needed by transparent proxy </p>
           <p class="about-small">32346: port of plugins such as trojan, ssr and pingtunnel</p>
           <p>All data is stored in local instead of in the cloud. </p>
-          <p>Problems found during use can be reported at <a href="https://github.com/v2rayA/v2rayA/issues">issues</a>.</p>`,
+          <p>Problems found during use can be reported at <a href="https://github.com/xbclub/xraya/issues">issues</a>.</p>`,
   axios: {
     messages: {
       optimizeBackend: "Adjust v2rayA service address？",
@@ -293,7 +293,7 @@ export default {
       ]
     },
     urls: {
-      usage: "https://github.com/v2rayA/v2rayA/wiki/Usage"
+      usage: "https://github.com/xbclub/xraya/wiki/Usage"
     }
   },
   routingA: {

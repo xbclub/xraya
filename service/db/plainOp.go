@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/boltdb/bolt"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 func Get(bucket string, key string, val interface{}) (err error) {

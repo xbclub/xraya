@@ -5,7 +5,7 @@ package iptables
 
 import (
 	"fmt"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
 	"os/exec"

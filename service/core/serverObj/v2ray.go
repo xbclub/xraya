@@ -3,7 +3,7 @@ package serverObj
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/v2rayA/v2rayA/common/ntp"
+	"github.com/xbclub/xraya/common/ntp"
 	"net"
 	"net/url"
 	"regexp"
@@ -13,10 +13,10 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 	"github.com/tidwall/gjson"
-	"github.com/v2rayA/v2rayA/common"
-	"github.com/v2rayA/v2rayA/core/coreObj"
-	"github.com/v2rayA/v2rayA/core/v2ray/service"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	"github.com/xbclub/xraya/common"
+	"github.com/xbclub/xraya/core/coreObj"
+	"github.com/xbclub/xraya/core/v2ray/service"
+	"github.com/xbclub/xraya/pkg/util/log"
 )
 
 func init() {
@@ -331,6 +331,7 @@ func (v *V2Ray) Configuration(info PriorInfo) (c Configuration, err error) {
 			if v.Host != "" {
 				core.StreamSettings.TLSSettings.ServerName = v.Host
 			}
+
 			// Alpn
 			if v.Alpn != "" {
 				alpn := strings.Split(v.Alpn, ",")
@@ -339,6 +340,8 @@ func (v *V2Ray) Configuration(info PriorInfo) (c Configuration, err error) {
 				}
 				core.StreamSettings.TLSSettings.Alpn = alpn
 			}
+			vnext := core.Settings.Vnext.([]coreObj.Vnext)
+			vnext[0].Users[0].Flow = v.Flow
 		} else if strings.ToLower(v.TLS) == "xtls" {
 			core.StreamSettings.Security = "xtls"
 			core.StreamSettings.XTLSSettings = &coreObj.TLSSettings{}
@@ -398,7 +401,7 @@ func (v *V2Ray) ExportToURL() string {
 			setValue(&query, "alpn", v.Alpn)
 			setValue(&query, "allowInsecure", strconv.FormatBool(v.AllowInsecure))
 		}
-		if v.TLS == "xtls" {
+		if v.TLS == "xtls" || v.TLS == "tls" {
 			setValue(&query, "flow", v.Flow)
 		}
 

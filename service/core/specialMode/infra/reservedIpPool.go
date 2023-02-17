@@ -1,8 +1,8 @@
 package infra
 
 import (
-	lru2 "github.com/v2rayA/v2rayA/infra/dataStructure/lru"
-	"github.com/v2rayA/v2rayA/pkg/util/log"
+	lru2 "github.com/xbclub/xraya/infra/dataStructure/lru"
+	"github.com/xbclub/xraya/pkg/util/log"
 	"sync"
 )
 
