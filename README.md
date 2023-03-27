@@ -1,8 +1,8 @@
-# v2rayA [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xbclub/xraya)](https://hub.docker.com/r/mzz2017/v2raya) [![Travis (.org)](https://img.shields.io/travis/xbclub/xraya?label=travis-ci%20build)](https://travis-ci.org/xbclub/xraya)
+# xrayA [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/xbclub/xraya)](https://hub.docker.com/r/mzz2017/v2raya) [![Travis (.org)](https://img.shields.io/travis/xbclub/xraya?label=travis-ci%20build)](https://travis-ci.org/xbclub/xraya)
 
 [**English**](https://github.com/xbclub/xraya/blob/master/README.md)&nbsp;&nbsp;&nbsp;[**简体中文**](https://github.com/xbclub/xraya/blob/master/README_zh.md)
 
-v2rayA is a V2Ray Linux client supporting global transparent proxy, compatible with SS, SSR, Trojan(trojan-go), [PingTunnel](https://github.com/esrrhs/pingtunnel) protocols. [[SSR protocol list]](https://github.com/v2rayA/shadowsocksR/blob/master/README.md#ss-encrypting-algorithm)
+xrayA is a V2Ray Linux client supporting global transparent proxy, compatible with SS, SSR, Trojan(trojan-go), [PingTunnel](https://github.com/esrrhs/pingtunnel) protocols. [[SSR protocol list]](https://github.com/v2rayA/shadowsocksR/blob/master/README.md#ss-encrypting-algorithm)
 
 We are committed to providing the simplest operation and meet most needs.
 
@@ -13,13 +13,12 @@ Project：https://github.com/xbclub/xraya
 
 ## Usage
 
-v2rayA mainly provides the following methods of installation:
+xrayA mainly provides the following methods of installation:
 
-1. Install from apt-source or AUR
-2. Docker
-3. Binary file and installation package
+1. Docker
+2. Binary file and installation package
 
-See [**v2rayA - Wiki**](https://github.com/xbclub/xraya/wiki/Usage)
+See [**xrayA - Wiki**](https://github.com/xbclub/xraya/wiki/Usage)
 
 
 ## Screenshot
